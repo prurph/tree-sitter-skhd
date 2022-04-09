@@ -1,0 +1,23 @@
+===================
+Single-line comment
+===================
+
+# skhd comments start with the pound sign
+
+---
+
+(source_file
+  (comment))
+
+===================
+Multi-line comment
+===================
+
+# Here is a multi-line
+# comment.
+
+---
+
+(source_file
+  (comment)
+  (comment))

@@ -1,0 +1,35 @@
+===========
+Config file
+===========
+
+.load "/watermelon/yum"
+
+---
+
+(source_file
+  (statement
+    (configuration_statement
+      (load_statement
+        (string)))))
+
+=========
+Blacklist
+=========
+
+.blacklist [
+    "google chrome"
+    "kitty"
+    "qutebrowser"
+    "terminal"
+]
+
+---
+
+(source_file
+  (statement
+    (configuration_statement
+      (blacklist_statement
+        (string)
+        (string)
+        (string)
+        (string)))))

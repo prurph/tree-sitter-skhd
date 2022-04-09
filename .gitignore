@@ -1,3 +1,7 @@
+# Tree-sitter specific
+Cargo.lock
+
+
 # Logs
 logs
 *.log

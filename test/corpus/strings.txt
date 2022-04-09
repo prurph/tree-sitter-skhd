@@ -1,0 +1,26 @@
+======
+String
+======
+
+"strings are enclosed between double-quotes"
+
+---
+
+(source_file
+  (statement
+    (expression
+      (string))))
+
+==============================
+String with special characters
+==============================
+
+"[ this ; string -> has ~ some # characters , skhd :: normally @ cares * about ]"
+
+---
+
+(source_file
+  (statement
+    (expression
+      (string))))
+

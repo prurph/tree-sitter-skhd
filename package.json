@@ -1,0 +1,31 @@
+{
+  "name": "tree-sitter-skhd",
+  "version": "1.0.0",
+  "description": "Tree-sitter parser for skhd.",
+  "main": "bindings/node",
+  "keywords": [
+    "lexer",
+    "parser",
+    "skhd"
+  ],
+  "scripts": {
+    "gen-test": "tree-sitter generate && tree-sitter test",
+    "test": "tree-sitter test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prurph/tree-sitter-skhd.git"
+  },
+  "author": "Prescott Murphy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prurph/tree-sitter-skhd/issues"
+  },
+  "homepage": "https://github.com/prurph/tree-sitter-skhd#readme",
+  "dependencies": {
+    "nan": "^2.15.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.6"
+  }
+}
