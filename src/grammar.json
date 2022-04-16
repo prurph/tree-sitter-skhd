@@ -8,15 +8,6 @@
         "name": "statement"
       }
     },
-    "expression": {
-      "type": "CHOICE",
-      "members": [
-        {
-          "type": "SYMBOL",
-          "name": "string"
-        }
-      ]
-    },
     "statement": {
       "type": "CHOICE",
       "members": [
@@ -76,6 +67,19 @@
         }
       ]
     },
+    "expression": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "string"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "key"
+        }
+      ]
+    },
     "comment": {
       "type": "TOKEN",
       "content": {
@@ -91,6 +95,418 @@
           }
         ]
       }
+    },
+    "key": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "_key_literal"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_keycode"
+        }
+      ]
+    },
+    "_key_literal": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[a-z0-9]\\s"
+            },
+            {
+              "type": "STRING",
+              "value": "return"
+            },
+            {
+              "type": "STRING",
+              "value": "tab"
+            },
+            {
+              "type": "STRING",
+              "value": "space"
+            },
+            {
+              "type": "STRING",
+              "value": "backspace"
+            },
+            {
+              "type": "STRING",
+              "value": "escape"
+            },
+            {
+              "type": "STRING",
+              "value": "delete"
+            },
+            {
+              "type": "STRING",
+              "value": "home"
+            },
+            {
+              "type": "STRING",
+              "value": "end"
+            },
+            {
+              "type": "STRING",
+              "value": "pageup"
+            },
+            {
+              "type": "STRING",
+              "value": "pagedown"
+            },
+            {
+              "type": "STRING",
+              "value": "insert"
+            },
+            {
+              "type": "STRING",
+              "value": "left"
+            },
+            {
+              "type": "STRING",
+              "value": "right"
+            },
+            {
+              "type": "STRING",
+              "value": "up"
+            },
+            {
+              "type": "STRING",
+              "value": "down"
+            },
+            {
+              "type": "STRING",
+              "value": "f1"
+            },
+            {
+              "type": "STRING",
+              "value": "f2"
+            },
+            {
+              "type": "STRING",
+              "value": "f3"
+            },
+            {
+              "type": "STRING",
+              "value": "f4"
+            },
+            {
+              "type": "STRING",
+              "value": "f5"
+            },
+            {
+              "type": "STRING",
+              "value": "f6"
+            },
+            {
+              "type": "STRING",
+              "value": "f7"
+            },
+            {
+              "type": "STRING",
+              "value": "f8"
+            },
+            {
+              "type": "STRING",
+              "value": "f9"
+            },
+            {
+              "type": "STRING",
+              "value": "f10"
+            },
+            {
+              "type": "STRING",
+              "value": "f11"
+            },
+            {
+              "type": "STRING",
+              "value": "f12"
+            },
+            {
+              "type": "STRING",
+              "value": "f13"
+            },
+            {
+              "type": "STRING",
+              "value": "f14"
+            },
+            {
+              "type": "STRING",
+              "value": "f15"
+            },
+            {
+              "type": "STRING",
+              "value": "f16"
+            },
+            {
+              "type": "STRING",
+              "value": "f17"
+            },
+            {
+              "type": "STRING",
+              "value": "f18"
+            },
+            {
+              "type": "STRING",
+              "value": "f19"
+            },
+            {
+              "type": "STRING",
+              "value": "f20"
+            },
+            {
+              "type": "STRING",
+              "value": "sound_up"
+            },
+            {
+              "type": "STRING",
+              "value": "sound_down"
+            },
+            {
+              "type": "STRING",
+              "value": "mute"
+            },
+            {
+              "type": "STRING",
+              "value": "play"
+            },
+            {
+              "type": "STRING",
+              "value": "previous"
+            },
+            {
+              "type": "STRING",
+              "value": "next"
+            },
+            {
+              "type": "STRING",
+              "value": "rewind"
+            },
+            {
+              "type": "STRING",
+              "value": "fast"
+            },
+            {
+              "type": "STRING",
+              "value": "brightness_up"
+            },
+            {
+              "type": "STRING",
+              "value": "brightness_down"
+            },
+            {
+              "type": "STRING",
+              "value": "illumination_up"
+            },
+            {
+              "type": "STRING",
+              "value": "illumination_down"
+            }
+          ]
+        },
+        {
+          "type": "PATTERN",
+          "value": "\\s+"
+        }
+      ]
+    },
+    "_keycode": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "kVK_Return"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_Tab"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_Space"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_Delete"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_Escape"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_ForwardDelete"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_Home"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_End"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_PageUp"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_PageDown"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_Help"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_LeftArrow"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_RightArrow"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_UpArrow"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_DownArrow"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F1"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F2"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F3"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F4"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F5"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F6"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F7"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F8"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F9"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F10"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F11"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F12"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F13"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F14"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F15"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F16"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F17"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F18"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F19"
+        },
+        {
+          "type": "STRING",
+          "value": "kVK_F20"
+        },
+        {
+          "type": "STRING",
+          "value": "NX_KEYTYPE_SOUND_UP"
+        },
+        {
+          "type": "STRING",
+          "value": "NX_KEYTYPE_SOUND_DOWN"
+        },
+        {
+          "type": "STRING",
+          "value": "NX_KEYTYPE_MUTE"
+        },
+        {
+          "type": "STRING",
+          "value": "NX_KEYTYPE_PLAY"
+        },
+        {
+          "type": "STRING",
+          "value": "NX_KEYTYPE_PREVIOUS"
+        },
+        {
+          "type": "STRING",
+          "value": "NX_KEYTYPE_NEXT"
+        },
+        {
+          "type": "STRING",
+          "value": "NX_KEYTYPE_REWIND"
+        },
+        {
+          "type": "STRING",
+          "value": "NX_KEYTYPE_FAST"
+        },
+        {
+          "type": "STRING",
+          "value": "NX_KEYTYPE_BRIGHTNESS_UP"
+        },
+        {
+          "type": "STRING",
+          "value": "NX_KEYTYPE_BRIGHTNESS_DOWN"
+        },
+        {
+          "type": "STRING",
+          "value": "NX_KEYTYPE_ILLUMINATION_UP"
+        },
+        {
+          "type": "STRING",
+          "value": "NX_KEYTYPE_ILLUMINATION_DOWN"
+        }
+      ]
     },
     "string": {
       "type": "PATTERN",

@@ -42,11 +42,20 @@
       "required": true,
       "types": [
         {
+          "type": "key",
+          "named": true
+        },
+        {
           "type": "string",
           "named": true
         }
       ]
     }
+  },
+  {
+    "type": "key",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "load_statement",
@@ -106,7 +115,67 @@
     "named": false
   },
   {
+    "type": "NX_KEYTYPE_BRIGHTNESS_DOWN",
+    "named": false
+  },
+  {
+    "type": "NX_KEYTYPE_BRIGHTNESS_UP",
+    "named": false
+  },
+  {
+    "type": "NX_KEYTYPE_FAST",
+    "named": false
+  },
+  {
+    "type": "NX_KEYTYPE_ILLUMINATION_DOWN",
+    "named": false
+  },
+  {
+    "type": "NX_KEYTYPE_ILLUMINATION_UP",
+    "named": false
+  },
+  {
+    "type": "NX_KEYTYPE_MUTE",
+    "named": false
+  },
+  {
+    "type": "NX_KEYTYPE_NEXT",
+    "named": false
+  },
+  {
+    "type": "NX_KEYTYPE_PLAY",
+    "named": false
+  },
+  {
+    "type": "NX_KEYTYPE_PREVIOUS",
+    "named": false
+  },
+  {
+    "type": "NX_KEYTYPE_REWIND",
+    "named": false
+  },
+  {
+    "type": "NX_KEYTYPE_SOUND_DOWN",
+    "named": false
+  },
+  {
+    "type": "NX_KEYTYPE_SOUND_UP",
+    "named": false
+  },
+  {
     "type": "]",
+    "named": false
+  },
+  {
+    "type": "backspace",
+    "named": false
+  },
+  {
+    "type": "brightness_down",
+    "named": false
+  },
+  {
+    "type": "brightness_up",
     "named": false
   },
   {
@@ -114,7 +183,323 @@
     "named": true
   },
   {
+    "type": "delete",
+    "named": false
+  },
+  {
+    "type": "down",
+    "named": false
+  },
+  {
+    "type": "end",
+    "named": false
+  },
+  {
+    "type": "escape",
+    "named": false
+  },
+  {
+    "type": "f1",
+    "named": false
+  },
+  {
+    "type": "f10",
+    "named": false
+  },
+  {
+    "type": "f11",
+    "named": false
+  },
+  {
+    "type": "f12",
+    "named": false
+  },
+  {
+    "type": "f13",
+    "named": false
+  },
+  {
+    "type": "f14",
+    "named": false
+  },
+  {
+    "type": "f15",
+    "named": false
+  },
+  {
+    "type": "f16",
+    "named": false
+  },
+  {
+    "type": "f17",
+    "named": false
+  },
+  {
+    "type": "f18",
+    "named": false
+  },
+  {
+    "type": "f19",
+    "named": false
+  },
+  {
+    "type": "f2",
+    "named": false
+  },
+  {
+    "type": "f20",
+    "named": false
+  },
+  {
+    "type": "f3",
+    "named": false
+  },
+  {
+    "type": "f4",
+    "named": false
+  },
+  {
+    "type": "f5",
+    "named": false
+  },
+  {
+    "type": "f6",
+    "named": false
+  },
+  {
+    "type": "f7",
+    "named": false
+  },
+  {
+    "type": "f8",
+    "named": false
+  },
+  {
+    "type": "f9",
+    "named": false
+  },
+  {
+    "type": "fast",
+    "named": false
+  },
+  {
+    "type": "home",
+    "named": false
+  },
+  {
+    "type": "illumination_down",
+    "named": false
+  },
+  {
+    "type": "illumination_up",
+    "named": false
+  },
+  {
+    "type": "insert",
+    "named": false
+  },
+  {
+    "type": "kVK_Delete",
+    "named": false
+  },
+  {
+    "type": "kVK_DownArrow",
+    "named": false
+  },
+  {
+    "type": "kVK_End",
+    "named": false
+  },
+  {
+    "type": "kVK_Escape",
+    "named": false
+  },
+  {
+    "type": "kVK_F1",
+    "named": false
+  },
+  {
+    "type": "kVK_F10",
+    "named": false
+  },
+  {
+    "type": "kVK_F11",
+    "named": false
+  },
+  {
+    "type": "kVK_F12",
+    "named": false
+  },
+  {
+    "type": "kVK_F13",
+    "named": false
+  },
+  {
+    "type": "kVK_F14",
+    "named": false
+  },
+  {
+    "type": "kVK_F15",
+    "named": false
+  },
+  {
+    "type": "kVK_F16",
+    "named": false
+  },
+  {
+    "type": "kVK_F17",
+    "named": false
+  },
+  {
+    "type": "kVK_F18",
+    "named": false
+  },
+  {
+    "type": "kVK_F19",
+    "named": false
+  },
+  {
+    "type": "kVK_F2",
+    "named": false
+  },
+  {
+    "type": "kVK_F20",
+    "named": false
+  },
+  {
+    "type": "kVK_F3",
+    "named": false
+  },
+  {
+    "type": "kVK_F4",
+    "named": false
+  },
+  {
+    "type": "kVK_F5",
+    "named": false
+  },
+  {
+    "type": "kVK_F6",
+    "named": false
+  },
+  {
+    "type": "kVK_F7",
+    "named": false
+  },
+  {
+    "type": "kVK_F8",
+    "named": false
+  },
+  {
+    "type": "kVK_F9",
+    "named": false
+  },
+  {
+    "type": "kVK_ForwardDelete",
+    "named": false
+  },
+  {
+    "type": "kVK_Help",
+    "named": false
+  },
+  {
+    "type": "kVK_Home",
+    "named": false
+  },
+  {
+    "type": "kVK_LeftArrow",
+    "named": false
+  },
+  {
+    "type": "kVK_PageDown",
+    "named": false
+  },
+  {
+    "type": "kVK_PageUp",
+    "named": false
+  },
+  {
+    "type": "kVK_Return",
+    "named": false
+  },
+  {
+    "type": "kVK_RightArrow",
+    "named": false
+  },
+  {
+    "type": "kVK_Space",
+    "named": false
+  },
+  {
+    "type": "kVK_Tab",
+    "named": false
+  },
+  {
+    "type": "kVK_UpArrow",
+    "named": false
+  },
+  {
+    "type": "left",
+    "named": false
+  },
+  {
+    "type": "mute",
+    "named": false
+  },
+  {
+    "type": "next",
+    "named": false
+  },
+  {
+    "type": "pagedown",
+    "named": false
+  },
+  {
+    "type": "pageup",
+    "named": false
+  },
+  {
+    "type": "play",
+    "named": false
+  },
+  {
+    "type": "previous",
+    "named": false
+  },
+  {
+    "type": "return",
+    "named": false
+  },
+  {
+    "type": "rewind",
+    "named": false
+  },
+  {
+    "type": "right",
+    "named": false
+  },
+  {
+    "type": "sound_down",
+    "named": false
+  },
+  {
+    "type": "sound_up",
+    "named": false
+  },
+  {
+    "type": "space",
+    "named": false
+  },
+  {
     "type": "string",
     "named": true
+  },
+  {
+    "type": "tab",
+    "named": false
+  },
+  {
+    "type": "up",
+    "named": false
   }
 ]
